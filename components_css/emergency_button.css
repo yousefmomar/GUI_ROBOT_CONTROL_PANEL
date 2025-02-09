@@ -1,0 +1,41 @@
+.emergency-button-container-component{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#emergency-button{
+    display: block;
+    border-radius: 50%;
+    background-color: #FF0000;
+    width: 50px;
+    height: 50px;
+    position: center;
+    border: none;
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.4);
+}
+#emergency-button:hover{
+    background-color: rgba(255, 0, 0, 0.8);
+}
+#emergency-button:active{
+    background-color: #FF0000;
+    border:2px solid black;
+}
+#emergency-button-text{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+#emergency-button-text::before{
+    content:'*';
+    color: red;
+}
+#emergency-button-text::after{
+    content:'*';
+    color: red;
+}
+#danger-mark::before{
+    content:'!';
+    color:white;
+    font-size: 30px;
+}

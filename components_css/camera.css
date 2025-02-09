@@ -1,0 +1,44 @@
+#camera-feed-component{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+#camera-feed-container{
+    background-color:#7886C7 ;
+    display: flex;
+    width:90%;
+    height:90%;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.4);
+    padding: 6px;
+    margin:auto;
+}
+#camera-feed{
+    border-radius: 10px;
+    width:100%;
+    height:90%;
+}
+#camera-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#camera-status-button,#screenshot-button{
+    background-color: #2D336B;
+    color: #FFF2F2;
+    margin:20px;  
+    text-align: center;
+    padding: 7px;
+    border-radius: 10px;
+    width: 200px;
+}
+#camera-status-button:hover,#screenshot-button:hover{
+    background-color: #2d336bc7 ;
+    color:#FFF2F2;
+}
+#camera-status-button:active,#screenshot-button:active{
+    background-color: #FFF2F2;
+    color: #2D336B;
+}

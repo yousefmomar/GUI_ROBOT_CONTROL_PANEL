@@ -1,0 +1,40 @@
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    color: #2D336B;
+    font-size: 30px;
+    margin: auto;
+}
+
+.Status {
+    color: red;
+    font-weight: bold;
+    font-size: 2em;
+    display: inline-block;
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+}
+
+.status-button {
+    background-color: #2D336B;
+    color: #FFF2F2;
+    margin: auto;
+    text-align: center;
+    padding: 7px;
+    border-radius: 10px;
+    width: 100px;
+}
+.status-button:hover {
+    background-color: #2d336bc7 ;
+    color:#FFF2F2;
+}
+.status-button:active {
+    background-color: #FFF2F2;
+    color: #2D336B;
+}
+#status-container-component{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

@@ -1,0 +1,65 @@
+.control-container-component {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#forward-button , #backward-button , #left-button , #right-button {
+    background-color: #2D336B;
+    color: #FFF2F2;
+    margin: 0.5em;
+    padding: 7px;
+    border-radius: 6px;
+}
+#forward-button {
+    grid-area: 1/2/2/3;
+}
+#backward-button {
+    grid-area: 3/2/4/3;
+}
+#right-button {
+    grid-area: 2/3/3/4;
+}
+#left-button {
+    grid-area: 2/1/3/2;
+}
+#direction{
+    grid-area: 2/2/3/3;
+    color:#2D336B;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#forward-button:hover , #backward-button:hover , #left-button:hover , #right-button:hover {
+    background-color: #2d336bc7 ;
+    color:#FFF2F2;
+}
+#forward-button:active , #backward-button:active , #left-button:active , #right-button:active {
+    background-color: #FFF2F2;
+    color: #2D336B;
+}
+/* Drawing the arrows using ::before */
+#forward-arrow::before {
+    content: "▲"; /* Up arrow */
+    font-size: 20px;
+    color: inherit;
+}
+
+#backward-arrow::before {
+    content: "▼"; /* Down arrow */
+    font-size: 20px;
+    color: inherit;
+}
+
+#right-arrow::before {
+    content: "▶"; /* Right arrow */
+    font-size: 20px;
+    color: inherit;
+}
+
+#left-arrow::before {
+    content: "◀"; /* Left arrow */
+    font-size: 20px;
+    color: inherit;
+}
