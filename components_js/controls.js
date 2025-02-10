@@ -1,21 +1,21 @@
-function updateDirection(direction) {
-    try {
-        const directionContainerSpan = $("#direction-container>span");
-        const directionText = $("#direction");
-
-        if (directionContainerSpan.length === 0 || directionText.length === 0) {
-            throw new Error("Direction container or text element is missing.");
-        }
-
-        directionContainerSpan.text(direction);
-        directionText.text(direction);
-    } catch (error) {
-        console.error("❌ Error in updateDirection:", error.message);
-    }
-}
-
 $(document).ready(function () {
-    let isMouseDown = false;
+    function updateDirection(direction) {
+        try {
+            const directionContainerSpan = $("#direction-container>span");
+            const directionText = $("#direction");
+    
+            if (directionContainerSpan.length === 0 || directionText.length === 0) {
+                throw new Error("Direction container or text element is missing.");
+            }
+    
+            directionContainerSpan.text(direction);
+            directionText.text(direction);
+            console.log(direction)
+        } catch (error) {
+            console.error("❌ Error in updateDirection:", error.message);
+        }
+    }
+        let isMouseDown = false;
 
     function handleMouseDown(direction) {
         try {

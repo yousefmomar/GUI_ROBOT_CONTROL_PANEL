@@ -62,3 +62,6 @@ try {
 } catch (error) {
     console.error("❌ Error attaching event to #emergency-button:", error.message);
 }
+
+
+console.log('lol')
